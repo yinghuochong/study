@@ -13,6 +13,8 @@
 - (UIButton *)initWithBlock:(ButtonClickBlock)block{
     self = [super init];
     if(self){
+        NSInteger
+        INT_MAX
         //self addTarget:self action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>
     }
     return self;
