@@ -25,7 +25,23 @@
 #pragma mark *** Character encoding and converting to/from c-string representations ***
     [self encondingString];
     
+#pragma mark *** Mutable string ***
+    [self multiString];
+    
+    
 }
+
+-(void)multiString{
+    NSMutableString *str = [NSMutableString stringWithFormat:@"你好"];
+//    [str replaceCharactersInRange:NSMakeRange(1, 2) withString:@"hello"];
+//    [str insertString:@"hello" atIndex:str.length+1];
+//    NSInteger inx = [str replaceOccurrencesOfString:@"x" withString:@"hello" options:NSCaseInsensitiveSearch range:NSMakeRange(0, str.length)];
+    NSRangePointer p = nil;
+    BOOL isTure = [str applyTransform:NSStringTransformHiraganaToKatakana reverse:YES range:NSMakeRange(0, str.length) updatedRange:p];
+    NSLog(@"%@",str);
+    
+}
+
 
 - (void)encondingString{
     
