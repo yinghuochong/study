@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5419C33D1E49DBDF00D70A23 /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5419C33C1E49DBDF00D70A23 /* NSArrayTest.m */; };
+		54573E6E1E4A9B87003B31B7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 54573E6D1E4A9B87003B31B7 /* Person.m */; };
 		54DA98791E2C93900046C84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DA98781E2C93900046C84B /* main.m */; };
 		54DA98811E2C939F0046C84B /* NSStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DA98801E2C939F0046C84B /* NSStringTest.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		5419C33B1E49DBDF00D70A23 /* NSArrayTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTest.h; sourceTree = "<group>"; };
 		5419C33C1E49DBDF00D70A23 /* NSArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
+		54573E6C1E4A9B87003B31B7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		54573E6D1E4A9B87003B31B7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		54DA98751E2C93900046C84B /* OCBasic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCBasic; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DA98781E2C93900046C84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54DA987F1E2C939F0046C84B /* NSStringTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTest.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				54DA98781E2C93900046C84B /* main.m */,
 				5419C33B1E49DBDF00D70A23 /* NSArrayTest.h */,
 				5419C33C1E49DBDF00D70A23 /* NSArrayTest.m */,
+				54573E6C1E4A9B87003B31B7 /* Person.h */,
+				54573E6D1E4A9B87003B31B7 /* Person.m */,
 			);
 			path = OCBasic;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			files = (
 				5419C33D1E49DBDF00D70A23 /* NSArrayTest.m in Sources */,
 				54DA98791E2C93900046C84B /* main.m in Sources */,
+				54573E6E1E4A9B87003B31B7 /* Person.m in Sources */,
 				54DA98811E2C939F0046C84B /* NSStringTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
