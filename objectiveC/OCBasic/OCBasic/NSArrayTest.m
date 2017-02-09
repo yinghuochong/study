@@ -19,6 +19,10 @@
     NSLog(@"%@",arr.description);
     
     
+    NSString *str = @"00000Y";
+    BOOL isTrue = [str boolValue];
+    
+    
     Person *p1 = [Person personWithAge:23 withName:@"zhangsan"];
     Person *p2 = [Person personWithAge:21 withName:@"lisi"];
     Person *p3 = [Person personWithAge:24 withName:@"wangwu"];
@@ -28,12 +32,12 @@
     NSArray *sortedArray = [array sortedArrayUsingSelector:@selector(comparePerson:)];
     NSLog(@"排序前:%@",array);
     NSLog(@"排序后:%@",sortedArray);
-    NSString *filePath = @"~/Desktop/a.x";
+    NSString *filePath = @"~/Desktop/iOSPakager.sh";
     filePath = [filePath stringByExpandingTildeInPath];
-    BOOL succ = [sortedArray writeToFile:filePath atomically:YES];
+//    BOOL succ = [sortedArray writeToFile:filePath atomically:YES];
     
     NSURL *url = [NSURL fileURLWithPath:filePath];
-    BOOL succ1 = [sortedArray writeToURL:url atomically:YES];
+    BOOL succ1 = [array writeToURL:url atomically:YES];
 
     NSLog(@"%@",@(succ1));
 }
