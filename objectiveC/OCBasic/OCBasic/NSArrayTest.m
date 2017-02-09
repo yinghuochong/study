@@ -11,6 +11,17 @@
 
 @implementation NSArrayTest
 - (void) test{
+    
+    NSMutableArray *array1 = [NSMutableArray arrayWithObjects: @"one", @"two", @"three", @"four", nil];
+    NSArray *newAdditions = [NSArray arrayWithObjects: @"a", @"b", nil];
+    NSMutableIndexSet *indexes = [NSMutableIndexSet indexSetWithIndex:5];
+//    [indexes addIndex:6];
+    [array1 insertObjects:newAdditions atIndexes:indexes];
+    NSLog(@"array: %@", array1);
+    
+    // Output: array: (one, two, three, four, a, b)
+    
+    
     NSString *s[4] = {@"2",@"3",@"4",@"1"};
     NSArray *arr = [[NSArray alloc] initWithObjects:s count:4];
     NSLog(@"%@",arr.description);

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NSStringTest.h"
 #import "NSArrayTest.h"
+#import "NSDictionaryTest.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -16,9 +17,12 @@ int main(int argc, const char * argv[]) {
 //        NSStringTest *strTest = [[NSStringTest alloc] init];
 //        [strTest test];
 
+//        //测试NSArray相关的方法
+//        NSArrayTest *arrTest = [[NSArrayTest alloc] init];
+//        [arrTest test];
         //测试NSArray相关的方法
-        NSArrayTest *arrTest = [[NSArrayTest alloc] init];
-        [arrTest test];
+        NSDictionaryTest *dicTest = [[NSDictionaryTest alloc] init];
+        [dicTest test];
     }
     return 0;
 }
