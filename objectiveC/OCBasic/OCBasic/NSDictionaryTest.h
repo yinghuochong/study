@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TestProtocal.h"
 
-@interface NSDictionaryTest : NSObject
+@interface NSDictionaryTest : NSObject<TestProtocal>
 - (void) test;
 @end

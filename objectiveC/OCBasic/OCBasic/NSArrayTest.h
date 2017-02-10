@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TestProtocal.h"
 
-@interface NSArrayTest : NSObject
+@interface NSArrayTest : NSObject<TestProtocal>
 - (void) test;
 
 @end
