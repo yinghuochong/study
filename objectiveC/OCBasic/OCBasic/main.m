@@ -13,10 +13,10 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSArray *classNameArray = @[//@"NSStringTest",
+        NSArray *classNameArray = @[@"NSStringTest",
                                     //@"NSArrayTest",
                                     //@"NSDictionaryTest",
-                                    @"CharacterSetTest",
+                                    //@"CharacterSetTest",
                                     ];
         for (NSString *className in classNameArray) {
             Class c = NSClassFromString(className);

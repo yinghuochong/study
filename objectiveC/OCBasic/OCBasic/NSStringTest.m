@@ -11,6 +11,43 @@
 @implementation NSStringTest
 
 - (void) test{
+    
+    NSArray *tests = @[ @"Y",       //YES
+                        @"N",       //NO
+                        @"T",       //YES
+                        @"F",       //NO
+                        @"t",       //YES
+                        @"f",       //NO
+                        @"1",       //YES
+                        @"0",       //NO
+                        @"Yes",     //YES
+                        @"No",      //NO
+                        @"AY",      //NO
+                        @"NY",      //NO
+                        @"YN",      //YES
+                        @"No not YES", //NO
+                        @"true",    //YES
+                        @"false",   //NO
+                        @"To be or not to be", //YES
+                        @"False",    //NO
+                        @"3567",        //YES
+                        @"0123456789",   //YES
+                        @"000",         //NO
+                        ];
+    
+    [tests enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            BOOL b = [obj boolValue];
+            NSLog(@"%@ ::   %@" ,obj, b?@"YES":@"NO");
+    }];
+    
+//    NSString *str = @"0123456789";
+//    NSDictionary *dic = @{@"isTrue":@YES,@"isTrue":@YES};
+//    BOOL b = [str boolValue];
+//    NSLog(@"%@" ,b?@"YES":@"NO");
+    
+    
+    
+    
 #pragma mark *** Initializers ***
 //    unichar * charArr = [self testInit];
 //    NSLog(@"charArr[0] = %c",charArr[0]); //如果freeWhenDone:YES这里charArr已经被free
@@ -23,10 +60,10 @@
 #pragma mark *** Finding lines, sentences, words, etc ***
 //    [self stringfind];
 #pragma mark *** Character encoding and converting to/from c-string representations ***
-    [self encondingString];
+    //[self encondingString];
     
 #pragma mark *** Mutable string ***
-    [self multiString];
+    //[self multiString];
     
     
 }

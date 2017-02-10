@@ -10,7 +10,9 @@
 
 @implementation CharacterSetTest
 - (void)test{
-    NSCharacterSet *set = [NSCharacterSet controlCharacterSet];
-    NSLog(@"%@",set);
+    NSString *str = @"   hello world!   ";
+    NSCharacterSet *set = [NSCharacterSet whitespaceCharacterSet];
+    str = [str stringByTrimmingCharactersInSet:set];
+    NSLog(@"%@",str);
 }
 @end
