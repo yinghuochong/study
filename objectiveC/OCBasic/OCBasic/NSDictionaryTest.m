@@ -21,5 +21,7 @@
     NSLog(@"%@",[dic descriptionWithLocale:[NSLocale currentLocale] indent:5]);
     NSArray *arr = [dic objectsForKeys:@[@"1",@"2",@"3"] notFoundMarker:nil];
     NSLog(@"%@",arr);
+    
+    NSSet
 }
 @end
