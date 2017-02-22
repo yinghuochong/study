@@ -13,6 +13,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        NSInteger x = sizeof(unichar);
+        
         NSArray *classNameArray = @[@"NSStringTest",
                                     //@"NSArrayTest",
                                     //@"NSDictionaryTest",

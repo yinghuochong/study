@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FCC4AF3E53203C5021240E9FF4D5C19C9E752F82",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FCC4AF3E53203C5021240E9FF4D5C19C9E752F82" : 9223372036854775807,
+    "3712ADC9C516891A5BE7C5A8666B94E6AD4125CA" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3D4E3D4F-5EE8-4B1F-9852-43906A638416",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FCC4AF3E53203C5021240E9FF4D5C19C9E752F82" : "study\/",
+    "3712ADC9C516891A5BE7C5A8666B94E6AD4125CA" : "iOS-interface\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OCBasic",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "objectiveC\/OCBasic\/OCBasic.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:yinghuochong\/iOS-interface.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3712ADC9C516891A5BE7C5A8666B94E6AD4125CA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:yinghuochong\/study.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FCC4AF3E53203C5021240E9FF4D5C19C9E752F82"
+    }
+  ]
+}

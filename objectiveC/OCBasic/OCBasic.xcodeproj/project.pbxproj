@@ -10,6 +10,8 @@
 		5419C33D1E49DBDF00D70A23 /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5419C33C1E49DBDF00D70A23 /* NSArrayTest.m */; };
 		542A2EBD1E4C1171004AA43F /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A2EBC1E4C1171004AA43F /* NSDictionaryTest.m */; };
 		542F18891E4D418A003F3DED /* CharacterSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F18881E4D418A003F3DED /* CharacterSetTest.m */; };
+		5443CFAC1E56C34F000BD8C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5443CFAB1E56C34F000BD8C0 /* Foundation.framework */; };
+		5443CFAE1E56C426000BD8C0 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5443CFAD1E56C426000BD8C0 /* PhotosUI.framework */; };
 		54573E6E1E4A9B87003B31B7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 54573E6D1E4A9B87003B31B7 /* Person.m */; };
 		54DA98791E2C93900046C84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DA98781E2C93900046C84B /* main.m */; };
 		54DA98811E2C939F0046C84B /* NSStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DA98801E2C939F0046C84B /* NSStringTest.m */; };
@@ -35,6 +37,8 @@
 		542F18871E4D418A003F3DED /* CharacterSetTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterSetTest.h; sourceTree = "<group>"; };
 		542F18881E4D418A003F3DED /* CharacterSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterSetTest.m; sourceTree = "<group>"; };
 		542F188A1E4D4214003F3DED /* TestProtocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestProtocal.h; sourceTree = "<group>"; };
+		5443CFAB1E56C34F000BD8C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "../../../iOS-interface/Foundation.framework"; sourceTree = "<group>"; };
+		5443CFAD1E56C426000BD8C0 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		54573E6C1E4A9B87003B31B7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		54573E6D1E4A9B87003B31B7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		54DA98751E2C93900046C84B /* OCBasic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCBasic; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,17 +52,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5443CFAE1E56C426000BD8C0 /* PhotosUI.framework in Frameworks */,
+				5443CFAC1E56C34F000BD8C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5443CFA81E55E55D000BD8C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5443CFAD1E56C426000BD8C0 /* PhotosUI.framework */,
+				5443CFAB1E56C34F000BD8C0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54DA986C1E2C93900046C84B = {
 			isa = PBXGroup;
 			children = (
 				54DA98771E2C93900046C84B /* OCBasic */,
 				54DA98761E2C93900046C84B /* Products */,
+				5443CFA81E55E55D000BD8C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
