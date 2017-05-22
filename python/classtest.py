@@ -5,6 +5,6 @@ class Person:
 
 	def sayHi(self):
 		print "hello how are you",self.name
-p = Person('firefly')
+	 Person('firefly')
 print p
 p.sayHi()
