@@ -13,7 +13,7 @@ var {
   StyleSheet,
 } = ReactNative;
 
-//var SearchScreen = require('./SearchScreen');
+var SearchScreen = require('./SearchScreen');
 
 class MovieCollecter extends React.Component {
   render() {
@@ -22,7 +22,7 @@ class MovieCollecter extends React.Component {
         style={styles.container}
         initialRoute={{
           title: 'Movies Collecter',
-          //component: SearchScreen,
+          component: SearchScreen,
         }}
       />
     );

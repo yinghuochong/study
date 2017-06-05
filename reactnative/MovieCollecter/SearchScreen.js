@@ -134,6 +134,7 @@ var SearchScreen = React.createClass({
       })
       .then((responseData) => {
         LOADING[query] = false;
+        
         resultsCache.totalForQuery[query] = responseData.total;
         resultsCache.dataForQuery[query] = responseData.movies;
         resultsCache.nextPageNumberForQuery[query] = 2;
