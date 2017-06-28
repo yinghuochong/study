@@ -1,0 +1,42 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'AdTest' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for AdTest
+  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+  # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
+  pod 'Firebase/AdMob'
+
+  pod "Yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'BatchedBridge', # Required For React Native 0.45.0+
+    'Core',
+    # Add any other subspecs you want to use in your project
+  ]
+
+
+  
+  target 'AdTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'AdTest-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for AdTest-tvOS
+
+  target 'AdTest-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
