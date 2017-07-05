@@ -19,7 +19,6 @@ target 'AdTest' do
     # Add any other subspecs you want to use in your project
   ]
 
-
   
   target 'AdTestTests' do
     inherit! :search_paths

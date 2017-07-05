@@ -15,6 +15,8 @@ import {
   Animated,
   TouchableHighlight
 } from 'react-native';
+import codePush from 'react-native-code-push'
+
 
 // export const DURATION = { 
 //     LENGTH_LONG: 2000, 
@@ -54,14 +56,13 @@ getButton(text, position, duration,withStyle) {
             </TouchableHighlight>
         )
     }
+    componentDidMount(){
+      codePush.sync();
+    }
 
   render() {
     return(
       <View style={styles.container}>
-                {this.getButton('LENGTH_SHORT+top', 'top', DURATION.LENGTH_SHORT)}
-                {this.getButton('LENGTH_SHORT+bottom', 'bottom', DURATION.LENGTH_SHORT)}
-                {this.getButton('LENGTH_LONG+top', 'top', DURATION.LENGTH_LONG)}
-                {this.getButton('LENGTH_LONG+bottom', 'bottom', DURATION.LENGTH_LONG)}
                 {this.getButton('LENGTH_LONG+bottom+custom style', 'bottom', DURATION.LENGTH_LONG,true)}
                 <Toast ref="toast" position={this.state.position}/>
                 <Toast ref="toastWithStyle" style={{backgroundColor:'red'}} position={this.state.position}/>
